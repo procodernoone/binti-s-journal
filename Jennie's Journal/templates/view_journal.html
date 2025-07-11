@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ journal[1] }} | Binti's Journal</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="new-page">
+  <div class="container new-entry-form">
+    <h1 class="pastel-heading">{{ journal[1] }}</h1>
+    <p><small>{{ journal[3] }}</small></p>
+
+    {% if journal[4] %}
+      <div class="journal-card" style="background-color: {{ journal[4] }}">
+    {% else %}
+      <div class="journal-card" style="background-color: #fefefe">
+    {% endif %}
+        <p style="white-space: pre-wrap;">{{ journal[2] }}</p>
+      </div>
+
+    <a href="{{ url_for('journals') }}" class="btn kawaii-button mt-4">🔙 Back to Journals</a>
+  </div>
+</body>
+</html>

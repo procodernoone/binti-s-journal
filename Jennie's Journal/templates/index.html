@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Binti's Journal</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body class="home">
+  <div class="centered">
+    <img src="{{ url_for('static', filename='images/heading.png') }}" class="heading-img">
+    <p id="bioDisplay" class="bio-text"></p>
+    <input type="text" id="bioInput" class="form-control cute-input" placeholder="Write something cute..." style="max-width: 400px; margin: auto;">
+    <button class="btn kawaii-button mt-2" onclick="saveBio()">Save Bio</button>
+
+    <div class="button-container">
+      <a href="/new"><img src="{{ url_for('static', filename='images/new.png') }}" class="home-button"></a>
+      <a href="/journals"><img src="{{ url_for('static', filename='images/journals.png') }}" class="home-button"></a>
+    </div>
+  </div>
+</body>
+</html>

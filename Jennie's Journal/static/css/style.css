@@ -1,0 +1,128 @@
+body {
+  font-family: 'Comic Sans MS', cursive;
+  background-color: #fff6fb;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.pastel-heading {
+  color: #ff69b4;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px #ffeef2;
+}
+
+.heading-img {
+  width: 70%;
+  margin: 20px auto;
+  display: block;
+}
+
+.bio-text {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.home-button {
+  width: 180px;
+  transition: transform 0.3s ease;
+}
+.home-button:hover {
+  transform: scale(1.1);
+}
+
+.new-entry-form {
+  margin-top: 50px;
+  max-width: 700px;
+}
+
+.cute-input, .cute-textarea, .pastel-select {
+  border-radius: 15px;
+  border: 2px dashed #ffb6c1;
+  background-color: #fff0f5;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.kawaii-button {
+  background-color: #ffcce0;
+  color: #4b0049;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+.kawaii-button:hover {
+  background-color: #ffb6c1;
+  box-shadow: 0 4px 12px #ffd6e8;
+}
+
+.journal-link {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+}
+
+.journal-card {
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px #ffdee9;
+  min-height: 200px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+.journal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px #ffd6ea;
+}
+
+
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background-color: #ffc0cb; /* pastel pink */
+  border: none;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.floating-btn:hover {
+  background-color: #ffb6c1;
+  transform: translateX(-50%) scale(1.05);
+}
+
+
+.delete-button {
+  background-color: #ff6b6b;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 120px;
+}
+.delete-button:hover {
+  background-color: #ff3b3b;
+}
